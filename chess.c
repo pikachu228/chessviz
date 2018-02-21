@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 #define RED     "\033[1;31m"
 #define YELLOW  "\033[1;33m"
@@ -17,8 +17,6 @@ void startpoz (Cells cell[]);
 int main()
 {
     Cells cell[63];
-//  printf ("\n%i\n",sizeof (cell[1]) ); 
-//  return 0;
     startpoz (cell);
     drbo (cell);
     scanf("a");
@@ -75,7 +73,6 @@ void startpoz(Cells cell[]) {
 }
 
 void drbo(Cells cell[]) {
-//  char simb = 0;
     int i = 0, j = 0;
     printf("\n\n    _______________________________");
     for (i = 8; i >= 1; --i) {
